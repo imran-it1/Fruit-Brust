@@ -50,12 +50,33 @@
         border: none;
       }
 
-      .banner {
+      .banner1 {
         background: linear-gradient(
-            rgba(7, 7, 7, 0.918),
-            rgba(19, 19, 19, 0.144)
+            hwb(0 3% 97% / 0.801),
+            rgba(19, 19, 19, 0.021)
           ),
           url("./images/banner1.png");
+      }
+      .banner2 {
+        background: linear-gradient(
+            rgba(7, 7, 7, 0.788),
+            rgba(19, 19, 19, 0.021)
+          ),
+          url("./images/banner2.png");
+      }
+      .banner3 {
+        background: linear-gradient(
+            rgba(7, 7, 7, 0.788),
+            rgba(19, 19, 19, 0.021)
+          ),
+          url("./images/banner3.png");
+      }
+      .banner4 {
+        background: linear-gradient(
+            rgba(7, 7, 7, 0.788),
+            rgba(19, 19, 19, 0.021)
+          ),
+          url("./images/banner4.png");
       }
     </style>
 
@@ -146,20 +167,18 @@
 
       <!-- Banner Container -->
       <div class="container text-white">
-        <div class="carousel w-full h-[60vh]">
+        <div class="carousel w-full h-[60vh] rounded-lg">
+          <!-- Slide One -->
           <div id="slide1" class="carousel-item relative w-full">
-            <!-- <img
-              src="/images/banner1.png"
-              class="w-full bg-center bg-cover bg-no-repeat"
-            /> -->
+            <!-- Banner Img -->
             <div
-              class="w-full h-full banner bg-no-repeat bg-cover bg-center"
+              class="w-full h-full banner1 bg-no-repeat bg-cover bg-center"
             ></div>
-
+            <!-- Banner Text -->
             <div
               class="absolute text-center w-full h-full flex flex-col justify-center items-center"
             >
-              <h1 class="text-5xl md:text-6xl lg:text-7xl mb-6">
+              <h1 class="text-5xl md:text-6xl lg:text-7xl mb-6 font-extrabold">
                 Exotic tastes at your <br />
                 doorstep
               </h1>
@@ -180,11 +199,32 @@
               <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
           </div>
+
+          <!-- Slide Two -->
           <div id="slide2" class="carousel-item relative w-full">
-            <img
-              src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
-              class="w-full"
-            />
+            <!-- Banner Img -->
+            <div
+              class="w-full h-full banner2 bg-no-repeat bg-cover bg-center"
+            ></div>
+
+            <!-- Baneer Text -->
+            <div
+              class="absolute text-center w-full h-full flex flex-col justify-center items-center"
+            >
+              <h1 class="text-5xl md:text-6xl lg:text-7xl mb-6 font-extrabold">
+                Exotic tastes at your <br />
+                doorstep
+              </h1>
+              <p class="text-lg md:text-xl font-medium mb-8">
+                We supply highly quality organic products
+              </p>
+              <button
+                class="bg-color-primary px-5 py-3 md:px-7 md:py-5 rounded-lg"
+              >
+                Shop Now
+              </button>
+            </div>
+
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
@@ -192,11 +232,32 @@
               <a href="#slide3" class="btn btn-circle">❯</a>
             </div>
           </div>
+
+          <!-- Slide Three -->
           <div id="slide3" class="carousel-item relative w-full">
-            <img
-              src="/images/stock/photo-1414694762283-acccc27bca85.jpg"
-              class="w-full"
-            />
+            <!-- Banner Image -->
+            <div
+              class="w-full h-full banner3 bg-no-repeat bg-cover bg-center"
+            ></div>
+
+            <!-- Banner Text -->
+            <div
+              class="absolute text-center w-full h-full flex flex-col justify-center items-center"
+            >
+              <h1 class="text-5xl md:text-6xl lg:text-7xl mb-6 font-extrabold">
+                Exotic tastes at your <br />
+                doorstep
+              </h1>
+              <p class="text-lg md:text-xl font-medium mb-8">
+                We supply highly quality organic products
+              </p>
+              <button
+                class="bg-color-primary px-5 py-3 md:px-7 md:py-5 rounded-lg"
+              >
+                Shop Now
+              </button>
+            </div>
+
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
@@ -204,11 +265,32 @@
               <a href="#slide4" class="btn btn-circle">❯</a>
             </div>
           </div>
+
+          <!-- Slide Four -->
           <div id="slide4" class="carousel-item relative w-full">
-            <img
-              src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
-              class="w-full"
-            />
+            <!-- Banner Image -->
+            <div
+              class="w-full h-full banner4 bg-no-repeat bg-cover bg-center"
+            ></div>
+
+            <!-- Banner Text -->
+            <div
+              class="absolute text-center w-full h-full flex flex-col justify-center items-center"
+            >
+              <h1 class="text-5xl md:text-6xl lg:text-7xl mb-6 font-extrabold">
+                Exotic tastes at your <br />
+                doorstep
+              </h1>
+              <p class="text-lg md:text-xl font-medium mb-8">
+                We supply highly quality organic products
+              </p>
+              <button
+                class="bg-color-primary px-5 py-3 md:px-7 md:py-5 rounded-lg"
+              >
+                Shop Now
+              </button>
+            </div>
+
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
