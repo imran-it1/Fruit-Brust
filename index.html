@@ -49,6 +49,14 @@
         outline: none;
         border: none;
       }
+
+      .banner {
+        background: linear-gradient(
+            rgba(7, 7, 7, 0.918),
+            rgba(19, 19, 19, 0.144)
+          ),
+          url("./images/banner1.png");
+      }
     </style>
 
     <!-- Tailwind Custom CSS -->
@@ -140,10 +148,14 @@
       <div class="container text-white">
         <div class="carousel w-full h-[60vh]">
           <div id="slide1" class="carousel-item relative w-full">
-            <img
+            <!-- <img
               src="/images/banner1.png"
               class="w-full bg-center bg-cover bg-no-repeat"
-            />
+            /> -->
+            <div
+              class="w-full h-full banner bg-no-repeat bg-cover bg-center"
+            ></div>
+
             <div
               class="absolute text-center w-full h-full flex flex-col justify-center items-center"
             >
