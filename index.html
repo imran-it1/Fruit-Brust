@@ -35,12 +35,19 @@
 
     <!-- Custom Raw CSS -->
     <style>
+      .lato {
+        font-family: "Lato", sans-serif;
+      }
       .text-dark {
         color: #121212;
       }
       .text--light-dark {
         color: #121212;
         opacity: 0.6;
+      }
+      .border {
+        outline: none;
+        border: none;
       }
     </style>
 
@@ -53,10 +60,81 @@
               "color-primary": "#F85559",
               "color-secondary": "#",
             },
+            container: {
+              center: true,
+              padding: {
+                DEFAULT: "20px",
+                // Medium to up
+                md: "50px",
+              },
+            },
           },
         },
       };
     </script>
   </head>
-  <body></body>
+  <body class="lato tracking-wider">
+    <header>
+      <!-- Nav Container -->
+      <nav
+        class="container h-[120px] lg:text-white lg:bg-color-primary lg:rounded-full my-12"
+      >
+        <!-- Main Flex Container -->
+        <div class="w-full h-full flex justify-between items-center">
+          <!-- Nav links -->
+          <div class="sm:hidden lg:block flex-1">
+            <ul class="flex items-center flex-wrap">
+              <li><a class="m-4 text-lg font-medium" href="#">Home</a></li>
+              <li><a class="m-4 text-lg font-medium" href="#">About US</a></li>
+              <li><a class="m-4 text-lg font-medium" href="#">Shop</a></li>
+              <li>
+                <a class="m-4 text-lg font-medium" href="#">All Fruits</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Logo with Image -->
+          <div class="flex-1">
+            <ul class="flex items-center">
+              <!-- Img -->
+              <li>
+                <a class="m-4" href=""
+                  ><img
+                    class="sm:w-8 sm:h-8 lg:w-full lg:h-full"
+                    src="./images/logo.png"
+                    alt=""
+                /></a>
+              </li>
+              <!-- Link -->
+              <li>
+                <a class="m-4 sm:text-2xl md:text-[40px] font-bold" href="#">
+                  Fruit Burst
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mobile Navigation-->
+
+          <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </div>
+
+          <!-- Search Box -->
+          <div class="sm:hidden lg:block flex justify-end">
+            <div
+              class="flex items-center w-[400px] m-auto bg-white rounded-full px-6 py-4"
+            >
+              <input
+                class="flex-1 border-none outline-none placeholder:text-light-dark"
+                type="text"
+                placeholder="Search here"
+              />
+              <i class="fa-solid fa-search text-dark cursor-pointer"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
