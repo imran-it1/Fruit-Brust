@@ -415,11 +415,15 @@
                     class="rounded-xl"
                   />
                 </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">12.90$ - 18.85$</h2>
-                  <p>Apples</p>
+                <div class="card-body items-center text-center mb-8">
+                  <h2
+                    class="card-title text-dark text-2xl font-bold border-b py-5"
+                  >
+                    12.90$ - 18.85$
+                  </h2>
+                  <p class="text--light-dark font-medium mb-2">Apples</p>
                   <!-- Rating -->
-                  <div class="rating rating-lg rating-half">
+                  <div class="rating rating-md rating-half">
                     <input
                       type="radio"
                       name="rating-10"
@@ -428,58 +432,75 @@
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-green-500 mask mask-star-2 mask-half-1"
+                      class="bg-[#F85559] mask mask-star-2 mask-half-1"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-green-500 mask mask-star-2 mask-half-2"
+                      class="bg-[#F85559] mask mask-star-2 mask-half-2"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-green-500 mask mask-star-2 mask-half-1"
+                      class="bg-[#F85559] mask mask-star-2 mask-half-1"
                       checked
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-green-500 mask mask-star-2 mask-half-2"
+                      class="bg-[#F85559] mask mask-star-2 mask-half-2"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-green-500 mask mask-star-2 mask-half-1"
+                      class="bg-[#F85559] mask mask-star-2 mask-half-1"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-green-500 mask mask-star-2 mask-half-2"
+                      class="bg-[#F85559] mask mask-star-2 mask-half-2"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-green-500 mask mask-star-2 mask-half-1"
+                      class="bg-[#F85559] mask mask-star-2 mask-half-1"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-green-500 mask mask-star-2 mask-half-2"
+                      class="bg-[#F85559] mask mask-star-2 mask-half-2"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-green-500 mask mask-star-2 mask-half-1"
+                      class="bg-[#F85559] mask mask-star-2 mask-half-1"
                     />
                     <input
                       type="radio"
                       name="rating-10"
-                      class="bg-green-500 mask mask-star-2 mask-half-2"
+                      class="bg-[#F85559] w-[160px] h-[24px] mask mask-star-2 mask-half-2"
                     />
                   </div>
-                  <div class="card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
+                  <!-- Modal -->
+                  <!-- Open the modal using ID.showModal() method -->
+                  <button class="btn" onclick="my_modal_5.showModal()">
+                    open modal
+                  </button>
+                  <dialog
+                    id="my_modal_5"
+                    class="modal modal-bottom sm:modal-middle"
+                  >
+                    <form method="dialog" class="modal-box">
+                      <h3 class="font-bold text-lg">Hello!</h3>
+                      <p class="py-4">
+                        Press ESC key or click the button below to close
+                      </p>
+                      <div class="modal-action">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                      </div>
+                    </form>
+                  </dialog>
                 </div>
               </div>
             </div>
