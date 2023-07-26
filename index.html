@@ -374,7 +374,7 @@
               class="flex flex-col items-center gap-5 md:flex-row justify-between"
             >
               <!-- Deal -->
-              <div class="text-center md:text-left md:w-1/2 lg:pr-2">
+              <div class="text-center md:text-left md:w-1/2 lg:pr-2 space-y-6">
                 <h1 class="text-dark text-5xl font-extrabold">
                   Deal of the day
                 </h1>
@@ -390,41 +390,56 @@
                   class="grid grid-flow-col gap-10 text-center auto-cols-max"
                 >
                   <!-- Days -->
-                  <div class="flex flex-col text-light-dark font-medium">
+                  <div class="relative flex flex-col text-light-dark font-medium">
+                    <span class="countdown font-mono text-5xl">
+                      <span
+                        class="text-dark text-5xl font-extrabold"
+                        style="--value: 29"
+                      ></span>
+                    </span>
+                    days
+                    <div class="absolute left-[70px] top-3 flex flex-col gap-1">
+                      <i class="fa-solid fa-circle text-[5px] text-dark"></i>
+                      <i class="fa-solid fa-circle text-[5px] text-dark"></i>
+                      <i class="fa-solid fa-circle text-[5px] text-dark"></i>
+                    </div>
+                  </div>
+                  <!-- Hours -->
+                  <div class="relative flex flex-col text-light-dark font-medium">
                     <span class="countdown font-mono text-5xl">
                       <span
                         class="text-dark text-5xl font-extrabold"
                         style="--value: 15"
                       ></span>
                     </span>
-                    days
-                  </div>
-                  <!-- Hours -->
-                  <div class="flex flex-col text-light-dark font-medium">
-                    <span class="countdown font-mono text-5xl">
-                      <span
-                        class="text-dark text-5xl font-extrabold"
-                        style="--value: 10"
-                      ></span>
-                    </span>
                     hours
+                    <div class="absolute left-[70px] top-3 flex flex-col gap-1">
+                      <i class="fa-solid fa-circle text-[5px] text-dark"></i>
+                      <i class="fa-solid fa-circle text-[5px] text-dark"></i>
+                      <i class="fa-solid fa-circle text-[5px] text-dark"></i>
+                    </div>
                   </div>
                   <!-- Min -->
-                  <div class="flex flex-col text-light-dark font-medium">
+                  <div class="relative flex flex-col text-light-dark font-medium">
                     <span class="countdown font-mono text-5xl">
                       <span
                         class="text-dark text-5xl font-extrabold"
-                        style="--value: 24"
+                        style="--value: 25"
                       ></span>
                     </span>
                     min
+                    <div class="absolute left-[70px] top-3 flex flex-col gap-1">
+                      <i class="fa-solid fa-circle text-[5px] text-dark"></i>
+                      <i class="fa-solid fa-circle text-[5px] text-dark"></i>
+                      <i class="fa-solid fa-circle text-[5px] text-dark"></i>
+                    </div>
                   </div>
                   <!-- Sec -->
-                  <div class="flex flex-col text-light-dark font-medium">
+                  <div class="relative flex flex-col text-light-dark font-medium">
                     <span class="countdown font-mono text-5xl">
                       <span
                         class="text-dark text-5xl font-extrabold"
-                        style="--value: 16"
+                        style="--value: 08"
                       ></span>
                     </span>
                     sec
